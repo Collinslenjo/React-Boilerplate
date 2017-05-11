@@ -1,0 +1,26 @@
+{
+  "name": "react-start",
+  "version": "1.0.0",
+  "description": "ReactJs Application made by Collins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "author": "Collinslenjo",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-scripts": "0.9.5",
+    "webpack": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0"
+  }
+}
