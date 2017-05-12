@@ -1,4 +1,5 @@
 import React from 'react';
+//import styles from '../public/sass/material-dashboard.scss';
 
 class AboutComponent extends React.Component{
   render(){

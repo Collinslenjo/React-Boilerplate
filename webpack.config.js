@@ -15,17 +15,17 @@ var config = {
       {
         test : /\.jsx?/,
         include : APP_DIR,
-        loader : 'babel-loader'
+        loader : 'babel-loader',
+        exclude: /node_modules/
       },
-      { test : /\.jsx?/, include : APP_DIR + '/css/bootstrap.min.css', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/css/material-dashboard.css', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/css/demo.css', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/css/style.css', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/js/bootstrap.min.js', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/js/material.min.js', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/js/material-dashboard.js', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/js/jquery-3.1.0.min.js', loader : 'babel-loader'},
-      { test : /\.jsx?/, include : APP_DIR + '/js/main.js', loader : 'babel-loader'}
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('css!sass')
+      }
     ]
   }
 };
