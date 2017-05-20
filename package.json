@@ -4,8 +4,10 @@
   "description": "ReactJs Application made by Collins",
   "main": "index.js",
   "scripts": {
+    "webpack-watch": "webpack -w",
+    "express-server": "node ./server",
+    "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d --watch",
     "build": "webpack -p"
   },
   "author": "Collinslenjo",

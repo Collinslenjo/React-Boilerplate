@@ -1,16 +1,15 @@
 import React from 'react';
-//import styles from '../public/sass/material-dashboard.scss';
 
 class AboutComponent extends React.Component{
   render(){
     return(
-      <div class="container">
-      <div class="row">
-        <div class="panel">
-          <div class="panel-header">
-            <h3>About Me</h3>
+      <div className="container">
+      <div className="row">
+        <div className="panel">
+          <div className="panel-header">
+            <h4>About Me</h4>
           </div>
-          <div class="panel-body">
+          <div className="panel-body">
           <p>This is my Description Right here</p>
         </div>
         </div>

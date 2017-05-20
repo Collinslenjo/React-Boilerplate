@@ -15,19 +15,14 @@ var config = {
       {
         test : /\.jsx?/,
         include : APP_DIR,
-        loader : 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css!sass')
+        exclude: /node_modules/,
+        loader : 'babel-loader'
       }
     ]
-  }
+  },
+   resolve: {
+    extensions: ['.js', '.json'] 
+}
 };
 
 module.exports = config;
