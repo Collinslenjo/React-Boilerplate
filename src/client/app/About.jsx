@@ -7,10 +7,11 @@ class AboutComponent extends React.Component{
       <div className="row">
         <div className="panel">
           <div className="panel-header">
-            <h4>About Me</h4>
+            <h3 className="heading">About Me</h3>
           </div>
           <div className="panel-body">
           <p>This is my Description Right here</p>
+          <p>I think I made it</p>
         </div>
         </div>
       </div>

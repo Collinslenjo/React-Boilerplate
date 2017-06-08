@@ -1,10 +1,11 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
+const BUILD_DIR = path.resolve(__dirname, 'src/client/public');
+const APP_DIR = path.resolve(__dirname, 'src/client/app');
 
-var config = {
+const config = {
   entry: APP_DIR + '/index.jsx',
   output: {
     path: BUILD_DIR,
@@ -17,12 +18,28 @@ var config = {
         include : APP_DIR,
         exclude: /node_modules/,
         loader : 'babel-loader'
+      },
+      {
+        test : /\.js?/,
+        include : APP_DIR,
+        exclude: /node_modules/,
+        loader : 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       }
-    ]
+    ],
   },
    resolve: {
     extensions: ['.js', '.json'] 
-}
+},
+  plugins: [
+    new ExtractTextPlugin("styles.css"),
+  ]
 };
 
 module.exports = config;

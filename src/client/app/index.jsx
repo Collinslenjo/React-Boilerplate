@@ -3,13 +3,18 @@ import {render} from 'react-dom';
 import AwesomeComponent from './AwesomeComponent.jsx';
 import AboutComponent from './About.jsx';
 
+
 class App extends React.Component {
   render () {
     return(
-	       <div>
-	       <h3><u><i>Hello Guys!</i></u></h3>
-          <AboutComponent />
-          <AwesomeComponent />
+	     <div className="container-fluid">
+	      <div className="row">
+	       <div className="col-md-6 col-md-offset-3">
+	       	<h3>Hello Guys!</h3>
+          	<AboutComponent />
+          	<AwesomeComponent />
+           </div>
+          </div>
         </div>
     );
   }
