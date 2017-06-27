@@ -11,4 +11,9 @@
 
 > React Components are located in the ```src/client/app``` directory.
 
+
+##### Features to be added
+- add webpack webpack-dev-server
+> configure it to reload on change of a file that it is watching
+
 ###### Happy React Coding!
