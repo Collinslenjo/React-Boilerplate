@@ -1,16 +1,12 @@
 # React-Boilerplate
 
-> Setting up React with Babel and webpack 2 the hardway (My Biolerplate)
-> React-router and external stylesheets to be added soon.
+> React with Babel and webpack2
 
 #### Getting Started
-
-```git clone``` the repository then ```cd``` into the folder and ```npm install``` .
-> To run the app in development mode you will have to run
-> ```npm run dev```
-
-> React Components are located in the ```src/client/app``` directory.
-
+> - ```git clone``` the repository then ```cd``` into the folder and run ```yarn``` to install the dependencies  
+- run ```yarn start``` to start the app in development mode  
+- visit [http://localhost:8080/](http://localhost:8080/) to see your rendered page  
+React Components are located in the ```client/components``` directory
 
 #### Features
  * Webpack2 - the module bundler
