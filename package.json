@@ -1,0 +1,14 @@
+{
+  "name": "react-start",
+  "version": "1.0.0",
+  "description": "React Boilerplate",
+  "main": "index.js",
+  "repository": "https://github.com/Collinslenjo/React-Intro.git",
+  "author": "collins lenjo <collinslenjo.cl@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

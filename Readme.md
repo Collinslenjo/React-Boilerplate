@@ -12,4 +12,10 @@
 > React Components are located in the ```src/client/app``` directory.
 
 
+#### Features
+ * Webpack2 - the module bundler
+ * Babel - Javascript compiler
+ * ES6 - the new Javasript standard
+ * Yarn - the package manager
+
 ###### Happy React Coding!
